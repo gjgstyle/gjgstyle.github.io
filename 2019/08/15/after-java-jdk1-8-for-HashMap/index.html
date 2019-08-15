@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>HashMap | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表上连接超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。">
+  <meta name="description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表长度超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。  简书有很详细的讲解 https://www.jianshu.com/p/ee">
 <meta name="keywords" content="HashMap,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HashMap">
 <meta property="og:url" content="http://yoursite.com/2019/08/15/after-java-jdk1-8-for-HashMap/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表上连接超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。">
+<meta property="og:description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表长度超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。  简书有很详细的讲解 https://www.jianshu.com/p/ee">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-15T06:42:35.622Z">
+<meta property="og:updated_time" content="2019-08-15T06:52:25.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HashMap">
-<meta name="twitter:description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表上连接超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。">
+<meta name="twitter:description" content="1首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表长度超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。  简书有很详细的讲解 https://www.jianshu.com/p/ee">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -175,9 +175,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表上连接超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。</span><br></pre></td></tr></table></figure>
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首先在java jdk1.8之前版本的HashMap底层结构是由数组+链表构成的,在更新了1.8之后，官方将封装改动优化，变成了数组+链表+红黑树的结构组成（换言之就是将原来链表长度超过8个的链表结构换成了红黑树），在性能上提升了一大截，在一些面试官那里常常能遇到让你讲讲对1.8版本之后的理解，所以还是需要了解一下。</span><br></pre></td></tr></table></figure>
 
-
+<h4 id="简书有很详细的讲解-https-www-jianshu-com-p-ee0de4c99f87"><a href="#简书有很详细的讲解-https-www-jianshu-com-p-ee0de4c99f87" class="headerlink" title="简书有很详细的讲解 https://www.jianshu.com/p/ee0de4c99f87"></a>简书有很详细的讲解 <a href="https://www.jianshu.com/p/ee0de4c99f87" target="_blank" rel="noopener">https://www.jianshu.com/p/ee0de4c99f87</a></h4>
       
 
       
@@ -314,7 +314,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#简书有很详细的讲解-https-www-jianshu-com-p-ee0de4c99f87"><span class="toc-number">1.</span> <span class="toc-text">简书有很详细的讲解 https://www.jianshu.com/p/ee0de4c99f87</span></a></li></ol>
                     </div>
                 </span>
             </div>
