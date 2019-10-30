@@ -6,20 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SQL优化的一些方法 | jianguo.gao</title>
+  <title>hexo | jianguo.gao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文转载自https://blog.csdn.net/qq_38789941/article/details/83744271SQL优化的一些方法1.对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。2.应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：">
-<meta name="keywords" content="sql优化">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SQL优化的一些方法">
-<meta property="og:url" content="http://yoursite.com/2019/08/19/sql优化Method/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="hexo">
+<meta property="og:url" content="http://yoursite.com/2019/10/30/hexo/index.html">
 <meta property="og:site_name" content="jianguo.gao">
-<meta property="og:description" content="本文转载自https://blog.csdn.net/qq_38789941/article/details/83744271SQL优化的一些方法1.对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。2.应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-20T03:07:25.998Z">
+<meta property="og:updated_time" content="2019-10-30T02:26:34.164Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL优化的一些方法">
-<meta name="twitter:description" content="本文转载自https://blog.csdn.net/qq_38789941/article/details/83744271SQL优化的一些方法1.对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。2.应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：">
+<meta name="twitter:title" content="hexo">
   
     <link rel="alternative" href="/atom.xml" title="jianguo.gao" type="application/atom+xml">
   
@@ -155,45 +151,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-sql优化Method" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hexo" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      SQL优化的一些方法
+      hexo
     </h1>
   
 
         
-        <a href="/2019/08/19/sql优化Method/" class="archive-article-date">
-  	<time datetime="2019-08-19T01:58:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
+        <a href="/2019/10/30/hexo/" class="archive-article-date">
+  	<time datetime="2019-10-30T02:26:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-30</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="本文转载自https-blog-csdn-net-qq-38789941-article-details-83744271"><a href="#本文转载自https-blog-csdn-net-qq-38789941-article-details-83744271" class="headerlink" title="本文转载自https://blog.csdn.net/qq_38789941/article/details/83744271"></a>本文转载自<a href="https://blog.csdn.net/qq_38789941/article/details/83744271" target="_blank" rel="noopener">https://blog.csdn.net/qq_38789941/article/details/83744271</a></h4><h3 id="SQL优化的一些方法"><a href="#SQL优化的一些方法" class="headerlink" title="SQL优化的一些方法"></a>SQL优化的一些方法</h3><h5 id="1-对查询进行优化，应尽量避免全表扫描，首先应考虑在-where-及-order-by-涉及的列上建立索引。"><a href="#1-对查询进行优化，应尽量避免全表扫描，首先应考虑在-where-及-order-by-涉及的列上建立索引。" class="headerlink" title="1.对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。"></a>1.对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引。</h5><h5 id="2-应尽量避免在-where-子句中对字段进行-null-值判断，否则将导致引擎放弃使用索引而进行全表扫描，如："><a href="#2-应尽量避免在-where-子句中对字段进行-null-值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：" class="headerlink" title="2.应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如："></a>2.应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：</h5><a id="more"></a>
-
-<h5 id="select-id-from-t-where-num-is-null"><a href="#select-id-from-t-where-num-is-null" class="headerlink" title="select id from t where num is null"></a>select id from t where num is null</h5><h5 id="可以在num上设置默认值0，确保表中num列没有null值，然后这样查询："><a href="#可以在num上设置默认值0，确保表中num列没有null值，然后这样查询：" class="headerlink" title="可以在num上设置默认值0，确保表中num列没有null值，然后这样查询："></a>可以在num上设置默认值0，确保表中num列没有null值，然后这样查询：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select id from t <span class="built_in">where</span> num=0</span><br></pre></td></tr></table></figure>
-
-<h5 id="3-应尽量避免在-where-子句中使用-或-lt-gt-操作符，否则将引擎放弃使用索引而进行全表扫描。"><a href="#3-应尽量避免在-where-子句中使用-或-lt-gt-操作符，否则将引擎放弃使用索引而进行全表扫描。" class="headerlink" title="3.应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描。"></a>3.应尽量避免在 where 子句中使用!=或&lt;&gt;操作符，否则将引擎放弃使用索引而进行全表扫描。</h5><h5 id="4-应尽量避免在-where-子句中使用-or-来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如："><a href="#4-应尽量避免在-where-子句中使用-or-来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如：" class="headerlink" title="4.应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如："></a>4.应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如：</h5><h5 id="select-id-from-t-where-num-10-or-num-20"><a href="#select-id-from-t-where-num-10-or-num-20" class="headerlink" title="select id from t where num=10 or num=20"></a>select id from t where num=10 or num=20</h5><h5 id="可以这样查询："><a href="#可以这样查询：" class="headerlink" title="可以这样查询："></a>可以这样查询：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select id from t <span class="built_in">where</span> num=10    </span><br><span class="line">union all    </span><br><span class="line">select id from t <span class="built_in">where</span> num=20</span><br></pre></td></tr></table></figure>
-
-
-<h5 id="5-in-和-not-in-也要慎用，否则会导致全表扫描，如："><a href="#5-in-和-not-in-也要慎用，否则会导致全表扫描，如：" class="headerlink" title="5.in 和 not in 也要慎用，否则会导致全表扫描，如："></a>5.in 和 not in 也要慎用，否则会导致全表扫描，如：</h5><pre><code class="bash">select id from t <span class="built_in">where</span> num <span class="keyword">in</span>(1,2,3)   </code></pre>
-<h5 id="对于连续的数值，能用-between-就不要用-in-了："><a href="#对于连续的数值，能用-between-就不要用-in-了：" class="headerlink" title="对于连续的数值，能用 between 就不要用 in 了："></a>对于连续的数值，能用 between 就不要用 in 了：</h5><pre><code class="bash">select id from t <span class="built_in">where</span> num between 1 and 3  </code></pre>
-<h5 id="6-下面的查询也将导致全表扫描："><a href="#6-下面的查询也将导致全表扫描：" class="headerlink" title="6.下面的查询也将导致全表扫描："></a>6.下面的查询也将导致全表扫描：</h5><pre><code class="bash">select id from t <span class="built_in">where</span> name like <span class="string">'%abc%'</span> </code></pre>
-<h5 id="7-应尽量避免在-where-子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如："><a href="#7-应尽量避免在-where-子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如：" class="headerlink" title="7.应尽量避免在 where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如："></a>7.应尽量避免在 where 子句中对字段进行表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如：</h5><pre><code class="bash">select id from t <span class="built_in">where</span> num/2=100 </code></pre>
-<h5 id="应改为"><a href="#应改为" class="headerlink" title="应改为:"></a>应改为:</h5><pre><code class="bash">select id from t <span class="built_in">where</span> num=100*2 </code></pre>
-<h5 id="8-应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。如："><a href="#8-应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。如：" class="headerlink" title="8.应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。如："></a>8.应尽量避免在where子句中对字段进行函数操作，这将导致引擎放弃使用索引而进行全表扫描。如：</h5><pre><code class="bash">select id from t <span class="built_in">where</span> substring(name,1,3)=<span class="string">'abc'</span>--name以abc开头的id </code></pre>
-<h5 id="应改为-1"><a href="#应改为-1" class="headerlink" title="应改为:"></a>应改为:</h5><pre><code class="bash">select id from t <span class="built_in">where</span> name like <span class="string">'abc%'</span>   </code></pre>
-<h5 id="9-不要在-where-子句中的“-”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。"><a href="#9-不要在-where-子句中的“-”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。" class="headerlink" title="9.不要在 where 子句中的“=”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。"></a>9.不要在 where 子句中的“=”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。</h5><h5 id="10-在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。"><a href="#10-在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。" class="headerlink" title="10.在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。"></a>10.在使用索引字段作为条件时，如果该索引是复合索引，那么必须使用到该索引中的第一个字段作为条件时才能保证系统使用该索引，否则该索引将不会被使用，并且应尽可能的让字段顺序与索引顺序相一致。</h5><h5 id="11-不要写一些没有意义的查询，如需要生成一个空表结构："><a href="#11-不要写一些没有意义的查询，如需要生成一个空表结构：" class="headerlink" title="11.不要写一些没有意义的查询，如需要生成一个空表结构："></a>11.不要写一些没有意义的查询，如需要生成一个空表结构：</h5><pre><code class="bash">select col1,col2 into <span class="comment">#t from t where 1=0   </span></code></pre>
-<h5 id="这类代码不会返回任何结果集，但是会消耗系统资源的，应改成这样："><a href="#这类代码不会返回任何结果集，但是会消耗系统资源的，应改成这样：" class="headerlink" title="这类代码不会返回任何结果集，但是会消耗系统资源的，应改成这样："></a>这类代码不会返回任何结果集，但是会消耗系统资源的，应改成这样：</h5><pre><code class="bash">create table <span class="comment">#t(...)  </span></code></pre>
-<h5 id="12-很多时候用-exists-代替-in-是一个好的选择："><a href="#12-很多时候用-exists-代替-in-是一个好的选择：" class="headerlink" title="12.很多时候用 exists 代替 in 是一个好的选择："></a>12.很多时候用 exists 代替 in 是一个好的选择：</h5><pre><code class="bash">select num from a <span class="built_in">where</span> num <span class="keyword">in</span>(select num from b)   </code></pre>
-<h5 id="用下面的语句替换："><a href="#用下面的语句替换：" class="headerlink" title="用下面的语句替换："></a>用下面的语句替换：</h5><pre><code class="bash">select num from a <span class="built_in">where</span> exists(select 1 from b <span class="built_in">where</span> num=a.num)  </code></pre>
-<h5 id="13-并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时，SQL查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，那么即使在sex上建了索引也对查询效率起不了作用。"><a href="#13-并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时，SQL查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，那么即使在sex上建了索引也对查询效率起不了作用。" class="headerlink" title="13.并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时，SQL查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，那么即使在sex上建了索引也对查询效率起不了作用。"></a>13.并不是所有索引对查询都有效，SQL是根据表中数据来进行查询优化的，当索引列有大量数据重复时，SQL查询可能不会去利用索引，如一表中有字段sex，male、female几乎各一半，那么即使在sex上建了索引也对查询效率起不了作用。</h5><h5 id="14-索引并不是越多越好，索引固然可以提高相应的-select-的效率，但同时也降低了-insert-及-update-的效率，因为-insert-或-update-时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。"><a href="#14-索引并不是越多越好，索引固然可以提高相应的-select-的效率，但同时也降低了-insert-及-update-的效率，因为-insert-或-update-时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。" class="headerlink" title="14.索引并不是越多越好，索引固然可以提高相应的 select 的效率，但同时也降低了 insert 及 update 的效率，因为 insert 或 update 时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。"></a>14.索引并不是越多越好，索引固然可以提高相应的 select 的效率，但同时也降低了 insert 及 update 的效率，因为 insert 或 update 时有可能会重建索引，所以怎样建索引需要慎重考虑，视具体情况而定。</h5><h5 id="一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。"><a href="#一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。" class="headerlink" title="一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。"></a>一个表的索引数最好不要超过6个，若太多则应考虑一些不常使用到的列上建的索引是否有必要。</h5><h5 id="15-尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。"><a href="#15-尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。" class="headerlink" title="15.尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。"></a>15.尽量使用数字型字段，若只含数值信息的字段尽量不要设计为字符型，这会降低查询和连接的性能，并会增加存储开销。</h5><h5 id="这是因为引擎在处理查询和连接时会逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。"><a href="#这是因为引擎在处理查询和连接时会逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。" class="headerlink" title="这是因为引擎在处理查询和连接时会逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。"></a>这是因为引擎在处理查询和连接时会逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。</h5><h5 id="16-尽可能的使用-varchar-代替-char-，因为首先变长字段存储空间小，可以节省存储空间，"><a href="#16-尽可能的使用-varchar-代替-char-，因为首先变长字段存储空间小，可以节省存储空间，" class="headerlink" title="16.尽可能的使用 varchar 代替 char ，因为首先变长字段存储空间小，可以节省存储空间，"></a>16.尽可能的使用 varchar 代替 char ，因为首先变长字段存储空间小，可以节省存储空间，</h5><h5 id="其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。"><a href="#其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。" class="headerlink" title="其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。"></a>其次对于查询来说，在一个相对较小的字段内搜索效率显然要高些。</h5><h5 id="17-任何地方都不要使用-select-from-t-，用具体的字段列表代替“-”，不要返回用不到的任何字段。"><a href="#17-任何地方都不要使用-select-from-t-，用具体的字段列表代替“-”，不要返回用不到的任何字段。" class="headerlink" title="17.任何地方都不要使用 select * from t ，用具体的字段列表代替“*”，不要返回用不到的任何字段。"></a>17.任何地方都不要使用 select * from t ，用具体的字段列表代替“*”，不要返回用不到的任何字段。</h5><h5 id="18-避免频繁创建和删除临时表，以减少系统表资源的消耗。"><a href="#18-避免频繁创建和删除临时表，以减少系统表资源的消耗。" class="headerlink" title="18.避免频繁创建和删除临时表，以减少系统表资源的消耗。"></a>18.避免频繁创建和删除临时表，以减少系统表资源的消耗。</h5><h5 id="19-临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。"><a href="#19-临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。" class="headerlink" title="19.临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。"></a>19.临时表并不是不可使用，适当地使用它们可以使某些例程更有效，例如，当需要重复引用大型表或常用表中的某个数据集时。但是，对于一次性事件，最好使用导出表。</h5><h5 id="20-在新建临时表时，如果一次性插入数据量很大，那么可以使用-select-into-代替-create-table，避免造成大量-log-，以提高速度；如果数据量不大，为了缓和系统表的资源，应先create-table，然后insert。"><a href="#20-在新建临时表时，如果一次性插入数据量很大，那么可以使用-select-into-代替-create-table，避免造成大量-log-，以提高速度；如果数据量不大，为了缓和系统表的资源，应先create-table，然后insert。" class="headerlink" title="20.在新建临时表时，如果一次性插入数据量很大，那么可以使用 select into 代替 create table，避免造成大量 log ，以提高速度；如果数据量不大，为了缓和系统表的资源，应先create table，然后insert。"></a>20.在新建临时表时，如果一次性插入数据量很大，那么可以使用 select into 代替 create table，避免造成大量 log ，以提高速度；如果数据量不大，为了缓和系统表的资源，应先create table，然后insert。</h5><h5 id="21-如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先-truncate-table-，然后-drop-table-，这样可以避免系统表的较长时间锁定。"><a href="#21-如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先-truncate-table-，然后-drop-table-，这样可以避免系统表的较长时间锁定。" class="headerlink" title="21.如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先 truncate table ，然后 drop table ，这样可以避免系统表的较长时间锁定。"></a>21.如果使用到了临时表，在存储过程的最后务必将所有的临时表显式删除，先 truncate table ，然后 drop table ，这样可以避免系统表的较长时间锁定。</h5><h5 id="22-尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。"><a href="#22-尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。" class="headerlink" title="22.尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。"></a>22.尽量避免使用游标，因为游标的效率较差，如果游标操作的数据超过1万行，那么就应该考虑改写。</h5><h5 id="23-使用基于游标的方法或临时表方法之前，应先寻找基于集的解决方案来解决问题，基于集的方法通常更有效。"><a href="#23-使用基于游标的方法或临时表方法之前，应先寻找基于集的解决方案来解决问题，基于集的方法通常更有效。" class="headerlink" title="23.使用基于游标的方法或临时表方法之前，应先寻找基于集的解决方案来解决问题，基于集的方法通常更有效。"></a>23.使用基于游标的方法或临时表方法之前，应先寻找基于集的解决方案来解决问题，基于集的方法通常更有效。</h5><h5 id="24-与临时表一样，游标并不是不可使用。对小型数据集使用-FAST-FORWARD-游标通常要优于其他逐行处理方法，尤其是在必须引用几个表才能获得所需的数据时。"><a href="#24-与临时表一样，游标并不是不可使用。对小型数据集使用-FAST-FORWARD-游标通常要优于其他逐行处理方法，尤其是在必须引用几个表才能获得所需的数据时。" class="headerlink" title="24.与临时表一样，游标并不是不可使用。对小型数据集使用 FAST_FORWARD 游标通常要优于其他逐行处理方法，尤其是在必须引用几个表才能获得所需的数据时。"></a>24.与临时表一样，游标并不是不可使用。对小型数据集使用 FAST_FORWARD 游标通常要优于其他逐行处理方法，尤其是在必须引用几个表才能获得所需的数据时。</h5><h5 id="在结果集中包括“合计”的例程通常要比使用游标执行的速度快。如果开发时间允许，基于游标的方法和基于集的方法都可以尝试一下，看哪一种方法的效果更好。"><a href="#在结果集中包括“合计”的例程通常要比使用游标执行的速度快。如果开发时间允许，基于游标的方法和基于集的方法都可以尝试一下，看哪一种方法的效果更好。" class="headerlink" title="在结果集中包括“合计”的例程通常要比使用游标执行的速度快。如果开发时间允许，基于游标的方法和基于集的方法都可以尝试一下，看哪一种方法的效果更好。"></a>在结果集中包括“合计”的例程通常要比使用游标执行的速度快。如果开发时间允许，基于游标的方法和基于集的方法都可以尝试一下，看哪一种方法的效果更好。</h5><h5 id="25-尽量避免大事务操作，提高系统并发能力。"><a href="#25-尽量避免大事务操作，提高系统并发能力。" class="headerlink" title="25.尽量避免大事务操作，提高系统并发能力。"></a>25.尽量避免大事务操作，提高系统并发能力。</h5><h5 id="26-尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。"><a href="#26-尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。" class="headerlink" title="26.尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。"></a>26.尽量避免向客户端返回大数据量，若数据量过大，应该考虑相应需求是否合理。</h5>
+        
       
 
       
@@ -232,17 +210,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">sql优化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -293,7 +260,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/19/sql优化Method/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/30/hexo/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,18 +274,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/30/hexo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/16/文化在沉沦/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">文化在沉沦</div>
+    <a href="/2019/08/19/sql优化Method/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SQL优化的一些方法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -357,7 +315,7 @@
 <script src="https://billts.site/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "Mon Aug 19 2019 09:58:21 GMT+0800",
+  id: "Wed Oct 30 2019 10:26:34 GMT+0800",
   owner: 'gjgstyle',
   repo: 'gjgstyle.github.io',
   oauth: {
